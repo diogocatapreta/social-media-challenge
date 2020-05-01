@@ -1,6 +1,8 @@
 import React from "react"
 import HeaderPost from './HeaderPost'
 import ContentPost from './ContentPost';
+import FooterPost from './FooterPost'
+import CommentPost from './CommentPost'
 
 function Body() {
     return (
@@ -11,6 +13,8 @@ function Body() {
                         <div class="cardbox shadow-lg bg-white">
                             <HeaderPost />
                             <ContentPost />
+                            <FooterPost />
+                            <CommentPost />
                     </div>
                 </div>
             </div>
