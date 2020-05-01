@@ -1,5 +1,6 @@
 import React from "react"
 import HeaderPost from './HeaderPost'
+import ContentPost from './ContentPost';
 
 function Body() {
     return (
@@ -9,9 +10,7 @@ function Body() {
                     <div class="col-lg-6 offset-lg-3">
                         <div class="cardbox shadow-lg bg-white">
                             <HeaderPost />
-
-
-
+                            <ContentPost />
                     </div>
                 </div>
             </div>
