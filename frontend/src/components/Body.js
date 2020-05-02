@@ -1,8 +1,8 @@
-import React from "react"
-import HeaderPost from './HeaderPost'
+import React from 'react';
+import HeaderPost from './HeaderPost';
 import ContentPost from './ContentPost';
-import FooterPost from './FooterPost'
-import PostList from './PostList'
+import FooterPost from './FooterPost';
+import PostList from './PostList';
 
 function Body() {
     return (
@@ -11,8 +11,7 @@ function Body() {
                 <PostList />
             </div>
         </div>
-
-    )
+    );
 }
 
 export default Body;
