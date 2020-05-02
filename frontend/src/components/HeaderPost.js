@@ -1,7 +1,11 @@
 import React from 'react'
+// get our fontawesome imports
+import { faMapPin, faClock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-function HeaderPost() {
+function HeaderPost(props) {
+    let { nome, fotoPerfil, local, horarioPost } = props;
     return (
         <div class="cardbox-heading">
             <div class="dropdown float-right">
@@ -19,9 +23,9 @@ function HeaderPost() {
                     <a href=""><img class="img-fluid rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4E03AQEWq9rTC6yWtg/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=UyqNDwY9FgAXKlvdku6wgzQXDySCXfnb1KfD7SollY8" alt="User" /></a>
                 </div>
                 <div class="media-body">
-                    <p class="m-0">Diogo Cata Preta</p>
-                    <small><span><i class="icon ion-md-pin"></i> Uberlandia, Brazil</span></small>
-                    <small><span><i class="icon ion-md-time"></i> 10 hours ago</span></small>
+                    <p class="m-0">{nome}</p>
+                    <small><span><FontAwesomeIcon icon={faMapPin} size="1x" /> {local}</span></small>
+                    <small><span><FontAwesomeIcon icon={faClock} size="1x" />  {horarioPost}</span></small>
                 </div>
             </div>
         </div>

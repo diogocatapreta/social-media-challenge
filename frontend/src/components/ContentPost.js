@@ -1,10 +1,11 @@
 import React from 'react'
 
 
-function ContentPost() {
+function ContentPost(props) {
+    let {conteudoPost} = props;
     return (
         <div class="cardbox-item">
-            <img class="img-fluid" src="http://www.themashabrand.com/templates/bootsnipp/post/assets/img/1.jpg" alt="Image" />
+            <img class="img-fluid" src={conteudoPost} alt="Image" />
         </div>
     )
 }

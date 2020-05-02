@@ -2,23 +2,14 @@ import React from "react"
 import HeaderPost from './HeaderPost'
 import ContentPost from './ContentPost';
 import FooterPost from './FooterPost'
-import CommentPost from './CommentPost'
+import PostList from './PostList'
 
 function Body() {
     return (
         <div class="hero">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="cardbox shadow-lg bg-white">
-                            <HeaderPost />
-                            <ContentPost />
-                            <FooterPost />
-                            <CommentPost />
-                    </div>
-                </div>
+                <PostList />
             </div>
-        </div>
         </div>
 
     )

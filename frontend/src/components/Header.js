@@ -7,9 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
     return (
-        <nav className="navbar navbar-dark bg-dark mb-1 navbar navbar-expand-lg orange lighten-1">
+        <nav className="navbar navbar-dark bg-dark mb-1 navbar navbar-expand-lg orange lighten-1 fixed-top">
             <a class="navbar-brand" href="/">
-                <img src="http://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" /> Brinstagram
+                <img src="http://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" /> BeSocial
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
                 aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
