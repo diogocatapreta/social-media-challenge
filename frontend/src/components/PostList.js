@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import HeaderPost from './HeaderPost'
+import HeaderPost from './HeaderPost';
 import ContentPost from './ContentPost';
-import FooterPost from './FooterPost'
-import CommentPost from './CommentPost'
+import FooterPost from './FooterPost';
+
+import CreateCommentPost from './CreateCommentPost';
 
 class PostList extends Component {
     state = {
@@ -22,9 +23,17 @@ class PostList extends Component {
                         id: 1,
                         author: {
                             name: "Diego Fernandes",
-                            avatar: "http://url-da-imagem.com/imagem.jpg"
+                            avatar: "http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/1.jpg"
                         },
-                        content: "Conteúdo do comentário"
+                        content: "Eu simplesmente adorei esta imagem de um futuro aplicativo. Execute."
+                    },
+                    {
+                        id: 2,
+                        author: {
+                            name: "Janete Oliveira",
+                            avatar: "http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/3.jpeg"
+                        },
+                        content: "Eu simplesmente adorei esta imagem de um futuro aplicativo. Execute."
                     }
                 ]
             },
@@ -43,9 +52,17 @@ class PostList extends Component {
                         id: 1,
                         author: {
                             name: "Diego Fernandes",
-                            avatar: "http://url-da-imagem.com/imagem.jpg"
+                            avatar: "http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/1.jpg"
                         },
-                        content: "Conteúdo do comentário"
+                        content: "Eu simplesmente adorei esta imagem de um futuro aplicativo. Execute."
+                    },
+                    {
+                        id: 2,
+                        author: {
+                            name: "Mariana Cintra",
+                            avatar: "http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/5.jpg"
+                        },
+                        content: "Eu simplesmente adorei esta imagem de um futuro aplicativo. Execute."
                     }
                 ]
             },
@@ -63,10 +80,10 @@ class PostList extends Component {
                     {
                         id: 1,
                         author: {
-                            name: "Diego Fernandes",
-                            avatar: "http://url-da-imagem.com/imagem.jpg"
+                            name: "Mariana Cintra",
+                            avatar: "http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/5.jpg"
                         },
-                        content: "Conteúdo do comentário"
+                        content: "Fantástico Cata, gostei muito do resultado do desafio. Você esta no caminho certo para aprender."
                     }
                 ]
             },
@@ -145,8 +162,9 @@ class PostList extends Component {
 
                             <HeaderPost nome={post.author.name} fotoPerfil={post.author.avatar} local={post.location} horarioPost={post.date}/>
                             <ContentPost conteudoPost={post.postImage} />
-                            <FooterPost />
-                            <CommentPost />
+                            <FooterPost post={post}/>
+
+                            <CreateCommentPost />
                         </div>
                     </div>
                 ) }

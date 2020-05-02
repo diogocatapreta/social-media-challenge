@@ -8,14 +8,15 @@ function HeaderPost(props) {
     let { nome, fotoPerfil, local, horarioPost } = props;
     return (
         <div class="cardbox-heading">
+
             <div class="dropdown float-right">
                 <button class="btn btn-flat btn-flat-icon" type="button" data-toggle="dropdown" aria-expanded="false">
                     <em class="fa fa-ellipsis-h"></em>
                 </button>
                 <div class="dropdown-menu dropdown-scale dropdown-menu-right" role="menu" >
-                    <a class="dropdown-item" href="#">Hide post</a>
-                    <a class="dropdown-item" href="#">Stop following</a>
-                    <a class="dropdown-item" href="#">Report</a>
+                    <a class="dropdown-item" href="#">Esconder Post</a>
+                    <a class="dropdown-item" href="#">Parar de Seguir</a>
+                    <a class="dropdown-item" href="#">Denunciar</a>
                 </div>
             </div>
             <div class="media m-0">
